@@ -2151,7 +2151,7 @@ public class CenterControlImpl extends ICmdListener.Stub implements CenterContro
                                 openCarDvr();
                                 return true;
                             case 610:
-                                openFrontCamera(false);
+                                openAux(false);
                                 return true;
                             case 611:
                                 checkCarToMcu();
@@ -2374,7 +2374,7 @@ public class CenterControlImpl extends ICmdListener.Stub implements CenterContro
         }
     }
 
-    public void openFrontCamera(boolean home) {
+    public void openAux(boolean home) {
         try {
             if (PowerManagerApp.getSettingsInt("Front_view_camera") == 1) {
                 if (home) {
