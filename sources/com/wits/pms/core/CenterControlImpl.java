@@ -1851,7 +1851,7 @@ public class CenterControlImpl extends ICmdListener.Stub implements CenterContro
                 openDtv(true);
                 return;
             case 11:
-                openFrontCamera(true);
+                openAux(true);
                 return;
             default:
                 return;
